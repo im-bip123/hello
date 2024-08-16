@@ -3,73 +3,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Student Portfolio</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-            color: #333;
-        }
-        .hero {
-            background-color: #ffffff;
-            padding: 50px 20px;
-            text-align: center;
-          
-        }
-        .hero h1 {
-            font-size: 2.5em;
-            color: #333;
-            margin: 0;
-        }
-        .hero p {
-            color: #666;
-        }
-        .hero a {
-            display: inline-block;
-            margin: 10px 20px;
-            padding: 10px 20px;
-            font-size: 1em;
-            color: #ffffff;
-            background-color: #007bff;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .hero a:hover {
-            background-color: #0056b3;
-        }
-      
-      
-       
+        /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    background: #444;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem;
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background: #555;
+}
+
+section {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+ul {
+    padding-left: 1.5rem;
+}
+
+form {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #555;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+   
+    width: 100%;
+    bottom: 0;
+}
+div p a{
+    text-decoration: none;
+}
+div li a{
+    text-decoration: none;
+}
     </style>
 </head>
 <body>
+    <header>
+        <h1>Biplove Kharal</h1>
+        <p>Computer Science Student at New Horizon College</p>
+    </header>
     
-    <div class="hero">
-       
-        <h1>Hello, I'm Biplove Kharal</h1>
-        <p>I'm a student passionate about programming. Currently, I am studying in the 11th grade in NHC with Science faculty and Computer as my main subject
-             and exploring my interests in Computer and IT Sector .</p>
-       
-        <a href="#contact">Contact Me</a>
-    </div>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
     
-    <div class="contact-form" id="contact">
-       
-       
+    <section id="home">
+        <h2>Home</h2>
+        <p>Welcome to my portfolio! I'm a student passionate about programming and computers. Currently, I am studying in the 11th grade in NHC with Science faculty and Computer as my main subject and exploring my interests in Computer and IT Sector .
+        
+          </p>
+    </section>
+    
+    <section id="education">
+        <h2>Education</h2>
+        <p>I am studying Computer Science at Horizon, where I am developing skills in programming, 
+            web development, and emerging technologies. I'm eager to explore web development, AI, and data analysis. 
+            My goal is to apply my knowledge in real-world projects and stay active with the latest IT trends to create new ideas.</p>
+    </section>
+    
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>C</li>
+        </ul>
+    </section>
+    
+    <section id="contact">
         <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
         <div class="contact-info">
-            <p><strong>Phone:</strong> <a href="tel:+977 9847895100" >+977 9847895100</a></p>
-            <p><strong>Email:</strong> <a href="mailto:biplovkharal9@gmail.com">biplovkharal9@gmail.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+977 9847895100" class="hi">+977 9847895100</a></p>
+            <p><strong>Email:</strong> <a href="mailto:biplovkharal9@gmail.com" class="hi">biplovkharal9@gmail.com</a></p>
             <p><strong>Social Media:</strong></p>
             <ul>
                 <li><a href="https://www.facebook.com/profile.php?id=61551424436463&mibextid=LQQJ4d
-                    " target="_blank">Facebook</a></li>
-                <li><a href="https://www.instagram.com/biplove.kharal" target="_blank">Instagram</a></li>
-                <li><a href="https://github.com/im-bip123" target="_blank">GitHub</a></li>
+                    " target="_blank" class="hi">Facebook</a></li>
+                <li><a href="https://www.instagram.com/biplove.kharal" target="_blank" class="hi">Instagram</a></li>
+                <li><a href="https://github.com/im-bip123" target="_blank" class="hi">GitHub</a></li>
             </ul>
         </div>
-    </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Biplove Kharal</p>
+    </footer>
 </body>
 </html>
